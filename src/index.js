@@ -13,6 +13,7 @@ import EscolasList from './components/Escolas/EscolasList'
 import EscolasDetails from './components/Escolas/EscolasDetails'
 import AlunosDetails from './components/Alunos/AlunosDetails'
 import AlunosList from './components/Alunos/AlunosList'
+import Cadastros from './components/Cadastros/Cadastros';
 
 import{ createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -36,7 +37,9 @@ const router = createBrowserRouter([
   { path: '/api/gestor:id', element: <GestoresDetails /> },
 
   { path: '/api/turma', element: <TurmasList /> },
-  { path: '/api/turma:id', element: <TurmaDetails /> }
+  { path: '/api/turma:id', element: <TurmaDetails /> },
+
+  { path: '/cadastros', element: <Cadastros />}
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

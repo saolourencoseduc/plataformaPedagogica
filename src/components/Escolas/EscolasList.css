@@ -1,0 +1,13 @@
+.EscolasList {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.EscolasList h1{
+    text-align: center;
+}

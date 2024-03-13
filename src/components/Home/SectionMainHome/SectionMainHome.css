@@ -12,10 +12,15 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: .4s;
+}
+
+.SectionMainHome .escola-section:hover{
+    transform: translateY(-5px);
 }
 
 .SectionMainHome .escola-section a{
-    color: black;
+    color: #000;
     text-decoration: none;
 }
 
@@ -24,6 +29,17 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: .4s;
+}
+
+.SectionMainHome .alunos-section:hover{
+    transform: translateY(-5px);
+
+}
+
+.SectionMainHome .alunos-section a{
+    text-decoration: none;
+    color: black;
 }
 
 .SectionMainHome .adicionar-usuario-section{
@@ -31,6 +47,16 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: .5s;
+}
+
+.SectionMainHome .adicionar-usuario-section:hover{
+    transform: translateY(-5px);
+}
+
+.SectionMainHome .adicionar-usuario-section a{
+    color: #000;
+    text-decoration: none;
 }
 
 .SectionMainHome .leitura-de-prova-section{
@@ -38,6 +64,11 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: .5s;
+}
+
+.SectionMainHome .leitura-de-prova-section:hover{
+    transform: translateY(-5px);
 }
 
 .SectionMainHome .painel{
@@ -45,6 +76,16 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: .5s;
+}
+
+.SectionMainHome .painel:hover{
+    transform: translateY(-5px);
+}
+
+.SectionMainHome .painel a{
+    color: #000;
+    text-decoration: none;
 }
 
 .SectionMainHome .suporte-online{
@@ -52,6 +93,11 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: .5s;
+}
+
+.SectionMainHome .suporte-online:hover{
+    transform: translateY(-5px);
 }
 
 .SectionMainHome .video-tutorial{
@@ -59,4 +105,9 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: .5s;
+}
+
+.SectionMainHome .video-tutorial:hover{
+    transform: translateY(-5px);
 }
