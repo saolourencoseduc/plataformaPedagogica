@@ -13,29 +13,11 @@ const Cadastros = () => {
     email: ''
   });
   
-  const [formDataAluno, setFormDataAluno] = useState({
-    nome: '',
-    cpf: '',
-    escola: '',
-    contato: '',
-    nomeMae: '',
-    nomePai: ''
-  });
-
   const [cpfValido, setCpfValido] = useState(true);
 
   const handleInputChangeGestor = (e) => {
     const { name, value } = e.target;
     setFormDataGestor({ ...formDataGestor, [name]: value });
-
-    if (name === 'cpf') {
-      setCpfValido(validateCPF(value));
-    }
-  };
-
-  const handleInputChangeAluno = (e) => {
-    const { name, value } = e.target;
-    setFormDataAluno({ ...formDataAluno, [name]: value });
 
     if (name === 'cpf') {
       setCpfValido(validateCPF(value));
@@ -96,28 +78,13 @@ const Cadastros = () => {
     });
   };
 
-  const handleSubmitAluno = (e) => {
-    e.preventDefault();
-
-    console.log('Dados do formulário aluno:', formDataAluno);
-
-    setFormDataAluno({
-      nome: '',
-      cpf: '',
-      escola: '',
-      contato: '',
-      nomeMae: '',
-      nomePai: ''
-    });
-  };
-
   return (
     <div className='Cadastros'>
       <Navbar />
 
       <div className="main-container">
         <form onSubmit={handleSubmitGestor} className="cadastro-gestor">
-          <h1 className='title-gestor'><img src="./logo.png" alt="logo" className='logo-gestor-titulo'/>Cadastro Gestor</h1>
+          <h1 className='title-gestor'><img src="./logo.png" alt="logo" className='logo-gestor-titulo'/>Cadastro Usuário</h1>
           <label>
             Nome:
             <input type='text' name='nome' value={formDataGestor.nome} onChange={handleInputChangeGestor} />
@@ -142,43 +109,6 @@ const Cadastros = () => {
           <label>
             E-mail:
             <input type='text' name='email' value={formDataGestor.email} onChange={handleInputChangeGestor} />
-          </label>
-          <br />
-          <button type='submit' className='submit-button'>Cadastrar</button>
-        </form>
-
-
-        <form onSubmit={handleSubmitAluno} className="cadastro-aluno">
-          <h1 className='title-gestor'><img src="./logo.png" alt="logo" className='logo-gestor-titulo'/>Cadastro Aluno</h1>
-          <label>
-            Nome:
-            <input type='text' name='nome' value={formDataAluno.nome} onChange={handleInputChangeAluno} />
-          </label>
-          <br />
-          <label>
-            CPF:
-            <input type='text' name='cpf' value={formDataAluno.cpf} onChange={handleInputChangeAluno} />
-            {!cpfValido && <span style={{ color: 'red' }}>CPF inválido</span>}
-          </label>
-          <br />
-          <label>
-            Escola:
-            <input type='text' name='escola' value={formDataAluno.escola} onChange={handleInputChangeAluno} />
-          </label>
-          <br />
-          <label>
-            Contato:
-            <input type='text' name='contato' value={formDataAluno.contato} onChange={handleInputChangeAluno} />
-          </label>
-          <br />
-          <label>
-            Nome da Mãe:
-            <input type='text' name='nomeMae' value={formDataAluno.nomeMae} onChange={handleInputChangeAluno} />
-          </label>
-          <br />
-          <label>
-            Nome do Pai:
-            <input type='text' name='nomePai' value={formDataAluno.nomePai} onChange={handleInputChangeAluno} />
           </label>
           <br />
           <button type='submit' className='submit-button'>Cadastrar</button>

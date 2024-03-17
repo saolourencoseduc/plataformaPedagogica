@@ -10,20 +10,17 @@
   gap: 20px;
   padding: 20px;
   background-color: #fff;
+  margin: 0 auto;
 }
 
-.cadastro-gestor, .cadastro-aluno {
+.cadastro-gestor {
   flex: 1;
-  padding: 20px;
+  padding: 40px;
   border-radius: 5px;
 }
 
 .cadastro-gestor {
   border: 3px solid #2e4e7e; 
-}
-
-.cadastro-aluno {
-  border: 3px solid #04944c; 
 }
 
 .title-gestor {
