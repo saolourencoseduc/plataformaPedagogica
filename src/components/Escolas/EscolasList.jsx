@@ -31,7 +31,7 @@ const EscolasList = () => {
 
         {section === 'turmas' && (
           <div>
-            <h1>Turmas</h1>
+            <h1>Turmas 1</h1>
           </div>
         )}
 
