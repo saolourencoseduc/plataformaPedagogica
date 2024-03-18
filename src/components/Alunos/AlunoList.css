@@ -1,19 +1,19 @@
-.AlunoList{
+.AlunoList {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-.navbar-alunos {
+  }
+  
+  .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #092c76;
+    background-color: #2e4e7e;
     color: white;
     padding: 10px 0;
   }
   
-  .navbar-alunos button {
+  .navbar button {
     border: none;
     background: none;
     color: inherit;
@@ -23,8 +23,8 @@
     transition: background-color 0.3s;
   }
   
-  .navbar-alunos button:hover {
-    background-color: #43538e;
+  .navbar button:hover {
+    background-color: #47648f;
   }
   
   .main-container {

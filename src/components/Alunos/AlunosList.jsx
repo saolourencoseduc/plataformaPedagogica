@@ -6,6 +6,9 @@ import CadastroAluno from '../Escolas/CadastroAluno';
 import './AlunoList.css'
 
 
+import CadastroAluno from './CadastrosAlunos/CadastroAluno'
+import './AlunoList.css'
+
 import './Alunos.css'
 
 const AlunosList = () => {
@@ -19,12 +22,13 @@ const AlunosList = () => {
   return (
     <div className='AlunoList'>
       <Navbar />
-      <div className="navbar-alunos">
+      <div className="navbar">
         <button onClick={() => handleSectionChange('cadastros')}>Cadastrar Aluno</button>
         <button onClick={() => handleSectionChange('turmas')}>Turmas</button>
         <button onClick={() => handleSectionChange('series')}>Séries das Escolas</button>
         <button onClick={() => handleSectionChange('cursos')}>Cursos</button>
       </div>
+
       <div className="main-container">
         {section === 'cadastros' && (
           <div>
