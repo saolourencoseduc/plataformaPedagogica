@@ -9,7 +9,7 @@ const EscolasList = () => {
   return (
     <div className='EscolasList'>
       <Navbar />
-      
+  
       <Footer />
     </div>
   );

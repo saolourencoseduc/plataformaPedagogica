@@ -11,7 +11,7 @@ const Navbar = () => {
     if (storedPhoto) {
       setFotoUsuario(storedPhoto);
     }
-  }, []); // Vazio como segundo argumento para garantir que este efeito só seja executado uma vez
+  }, []);
 
   const gestorInfo = {
     nome: "Nome: gestor",
