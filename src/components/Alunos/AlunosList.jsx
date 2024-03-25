@@ -1,15 +1,10 @@
 import React, { useState } from 'react'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
-import CadastroAluno from '../Escolas/CadastroAluno';
-
-import './AlunoList.css'
-
-
 import CadastroAluno from './CadastrosAlunos/CadastroAluno'
-import './AlunoList.css'
+import AlunosDashboard from './AlunosDashboard'
 
-import './Alunos.css'
+import './AlunoList.css'
 
 const AlunosList = () => {
   const [section, setSection] = useState('');
@@ -24,9 +19,8 @@ const AlunosList = () => {
       <Navbar />
       <div className="navbar">
         <button onClick={() => handleSectionChange('cadastros')}>Cadastrar Aluno</button>
-        <button onClick={() => handleSectionChange('turmas')}>Turmas</button>
-        <button onClick={() => handleSectionChange('series')}>Séries das Escolas</button>
-        <button onClick={() => handleSectionChange('cursos')}>Cursos</button>
+        <button onClick={() => handleSectionChange('lista-alunos')}>Lista de Alunos</button>
+        <button onClick={() => handleSectionChange('grafico')}>Gráficos e Resultados</button>
       </div>
 
       <div className="main-container">
@@ -35,23 +29,13 @@ const AlunosList = () => {
             <p><CadastroAluno /></p>
           </div>
         )}
-
-        {section === 'turmas' && (
+        {section === 'lista-alunos' && (
           <div>
-            <h1>Turmas 1</h1>
+            Lista de Alunos
           </div>
         )}
-
-        {section === 'series' && (
-          <div>
-            <h1>Séries das Escolas</h1>
-          </div>
-        )}
-
-        {section === 'cursos' && (
-          <div>
-            <h1>Cursos</h1>
-          </div>
+        {section === 'grafico' && (
+          <AlunosDashboard />
         )}
       </div>
 

@@ -14,10 +14,12 @@ const Navbar = () => {
   }, []);
 
   const gestorInfo = {
-    nome: "Nome: gestor",
-    escola: "Escola: escola",
-    tipoDeEnsino: "Ensino: medio",
-    localizacao: "urbana"
+    nome: "vitor gabriel silva de lima"
+  };
+
+  const gestorEscola = {
+    escola: "Escola Estadual Pedro Barros",
+    tipoDeEnsino: ["Eja", "Anos finais", "Anos iniciais"]
   };
 
   const handleLogout = () => {
@@ -41,28 +43,36 @@ const Navbar = () => {
   return (
     <div className='Navbar'>
       <nav className='navegation'>
-        <h1>
-          <label htmlFor="file-upload" className="custom-file-upload">
-            <img src={fotoUsuario} alt="foto" id='foto-usuario' />
-            <i className="fa fa-plus">+</i>
-          </label>
-          <input type="file" accept="image/*" id="file-upload" onChange={handleFotoChange} style={{ display: 'none' }} />
-        </h1>
-
-        <div className="info-user">
-          <h2 className='usuario'>{gestorInfo.nome}</h2>
-          <h2 className='escola'>{gestorInfo.escola}</h2>
-          <h2 className='ensino'>{gestorInfo.tipoDeEnsino}</h2>
-        </div>
+        <img src="/logo.png" alt="logo" className='logo-plataforma'/>
 
         <div className="buttons-back">
           <span className='back-arrow' onClick={() => window.history.back()}>
             &#8592;
           </span>
-
-          <button className='btn-logout' onClick={handleLogout}>Sair</button>
         </div>
+
+        <h1 className='file-gestor'>
+          <label htmlFor="file-upload" className="custom-file-upload">
+            <img src={fotoUsuario} alt="foto" id='foto-usuario' />
+            <i className="fa fa-plus">+</i>
+          </label>
+          <input type="file" accept="image/*" id="file-upload" onChange={handleFotoChange} style={{ display: 'none' }} />
+          <div className="info-user">
+            <p className='usuario'>{gestorInfo.nome}</p>
+          </div>
+        </h1>
+
+        <button className='btn-logout' onClick={handleLogout}>Sair</button>
       </nav>
+
+      <div className='escola-info'>
+        <h1>{gestorEscola.escola}</h1>
+        <h3>
+          {gestorEscola.tipoDeEnsino.map((tipo, index) => (
+            <span key={index}>{tipo}{index !== gestorEscola.tipoDeEnsino.length - 1 ? " - " : ""}</span>
+          ))}
+        </h3>
+      </div>
     </div>
   );
 };

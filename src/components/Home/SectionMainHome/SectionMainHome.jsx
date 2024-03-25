@@ -17,9 +17,9 @@ const SectionMainHome = () => {
         target="_blank">Dashboard</Link>
         </div>
 
-        <div className='suporte-online'><img src="/suporte-online.png" alt="suporte"/>Suporte</div>
-
         <div className='video-tutorial'><img src="/video-tutorial.png" alt="Tutorial"/>Tutorial</div>
+
+        <div className='suporte-online'><img src="/suporte-online.png" alt="suporte"/>Suporte</div>
 
         <div className='adicionar-usuario-section'><img src="/adicionar-usuario.png" alt="adicionar novo"/><Link to={'/cadastros'}>Adicionar Usuário</Link></div>
     </div>

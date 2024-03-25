@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='Footer'>
         <section>
             <p>
-            &copy; Copyright 2023 Prefeitura Municipal de São Lourenço da Mata | Todos os direitos reservados
+            <img src="/logo-sao-loureco.jpg" alt="logo são lourenço" />&copy; Copyright 2023 Prefeitura Municipal de São Lourenço da Mata | Todos os direitos reservados
             </p>
         </section>
     </div>

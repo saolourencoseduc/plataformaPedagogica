@@ -1,14 +1,10 @@
 .CadastroAluno {
-  width: 800px;
+  width: 1100px;
   /* margin: 0 auto; */
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
-}
-
-.CadastroAluno h1 {
-  text-align: center;
 }
 
 .CadastroAluno form {

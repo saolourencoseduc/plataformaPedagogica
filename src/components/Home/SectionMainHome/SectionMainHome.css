@@ -3,23 +3,28 @@
     align-items: center;
     max-width: 80%;
     cursor: pointer;
-    gap: 5em;
-    margin: 90px 0 0 40px;
+    gap: 3em;
+    margin: 70px 0 0 30px;
 }
 
 .SectionMainHome .escola-section{
     max-width: 10%;
     display: flex;
     flex-direction: column;
+    border: 5px solid #2e4e7e;
+    border-radius: 8px;
+    padding: 10px;
     text-align: center;
     transition: .4s;
 }
 
 .SectionMainHome .escola-section:hover{
+    border: 5px solid #04944c;
     transform: translateY(-5px);
 }
 
 .SectionMainHome .escola-section a{
+    font-weight: bold;
     color: #000;
     text-decoration: none;
 }
@@ -28,17 +33,22 @@
     max-width: 10%;
     display: flex;
     flex-direction: column;
+    border: 5px solid #2e4e7e;
+    border-radius: 8px;
+    padding: 10px;
     text-align: center;
     transition: .4s;
 }
 
 .SectionMainHome .alunos-section:hover{
+    border: 5px solid #04944c;
     transform: translateY(-5px);
 
 }
 
 .SectionMainHome .alunos-section a{
     text-decoration: none;
+    font-weight: bold;
     color: black;
 }
 
@@ -46,16 +56,21 @@
     max-width: 10%;
     display: flex;
     flex-direction: column;
+    border: 5px solid #2e4e7e;
+    border-radius: 8px;
+    padding: 8px 10px;
     text-align: center;
     transition: .5s;
 }
 
 .SectionMainHome .adicionar-usuario-section:hover{
+    border: 5px solid #04944c;
     transform: translateY(-5px);
 }
 
 .SectionMainHome .adicionar-usuario-section a{
     color: #000;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -63,11 +78,16 @@
     max-width: 10%;
     display: flex;
     flex-direction: column;
+    border: 5px solid #2e4e7e;
+    border-radius: 8px;
+    padding: 10px;
     text-align: center;
     transition: .5s;
+    font-weight: bold;
 }
 
 .SectionMainHome .leitura-de-prova-section:hover{
+    border: 5px solid #04944c;
     transform: translateY(-5px);
 }
 
@@ -75,15 +95,20 @@
     max-width: 10%;
     display: flex;
     flex-direction: column;
+    border: 5px solid #2e4e7e;
+    border-radius: 8px;
+    padding: 10px;
     text-align: center;
     transition: .5s;
 }
 
 .SectionMainHome .painel:hover{
+    border: 5px solid #04944c;
     transform: translateY(-5px);
 }
 
 .SectionMainHome .painel a{
+    font-weight: bold;
     color: #000;
     text-decoration: none;
 }
@@ -92,11 +117,16 @@
     max-width: 10%;
     display: flex;
     flex-direction: column;
+    border: 5px solid #2e4e7e;
+    padding: 10px;
+    border-radius: 8px;
     text-align: center;
     transition: .5s;
+    font-weight: bold;
 }
 
 .SectionMainHome .suporte-online:hover{
+    border: 5px solid #04944c;
     transform: translateY(-5px);
 }
 
@@ -104,10 +134,15 @@
     max-width: 10%;
     display: flex;
     flex-direction: column;
+    border: 5px solid #2e4e7e;
+    padding: 10px;
+    border-radius: 8px;
     text-align: center;
     transition: .5s;
+    font-weight: bold;
 }
 
 .SectionMainHome .video-tutorial:hover{
+    border: 5px solid #04944c;
     transform: translateY(-5px);
 }
