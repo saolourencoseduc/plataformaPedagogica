@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
-
 import CadastroAluno from './CadastrosAlunos/CadastroAluno'
-import './AlunoList.css'
+import AlunosDashboard from './AlunosDashboard'
 
-import './Alunos.css'
+import './AlunoList.css'
 
 const AlunosList = () => {
 
@@ -21,9 +20,8 @@ const AlunosList = () => {
       <Navbar />
       <div className="navbar">
         <button onClick={() => handleSectionChange('cadastros')}>Cadastrar Aluno</button>
-        <button onClick={() => handleSectionChange('turmas')}>Turmas</button>
-        <button onClick={() => handleSectionChange('series')}>Séries das Escolas</button>
-        <button onClick={() => handleSectionChange('cursos')}>Cursos</button>
+        <button onClick={() => handleSectionChange('lista-alunos')}>Lista de Alunos</button>
+        <button onClick={() => handleSectionChange('grafico')}>Gráficos e Resultados</button>
       </div>
 
       <div className="main-container">
@@ -32,30 +30,13 @@ const AlunosList = () => {
             <CadastroAluno />
           </div>
         )}
-        {section === 'turmas' && (
+        {section === 'lista-alunos' && (
           <div>
-            <h1>Turmas</h1>
-            <p>Conteúdo da seção de turmas...</p>
+            Lista de Alunos
           </div>
         )}
-        {section === 'series' && (
-          <div>
-            <h1>Séries das Escolas</h1>
-            <p>Conteúdo da seção de séries...</p>
-          </div>
-        )}
-        {section === 'cursos' && (
-          <div>
-            <h1>Cursos</h1>
-            <div>
-              <h2>Matemática</h2>
-              <p>Conteúdo de Matemática</p>
-            </div>
-            <div>
-              <h2>Português</h2>
-              <p>Conteúdo de Português</p>
-            </div>
-          </div>
+        {section === 'grafico' && (
+          <AlunosDashboard />
         )}
       </div>
       <Footer />
@@ -63,4 +44,4 @@ const AlunosList = () => {
   )
 }
 
-export default AlunosList
+export default AlunosList;

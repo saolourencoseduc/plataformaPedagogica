@@ -6,9 +6,10 @@
   
   .navbar {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    background-color: #2e4e7e;
+    gap: 3em;
+    justify-content: center;
+    background-color: #082465;
     color: white;
     padding: 10px 0;
   }
@@ -20,11 +21,12 @@
     font: inherit;
     cursor: pointer;
     padding: 10px;
+    border: 2px solid #fff;
     transition: background-color 0.3s;
   }
   
   .navbar button:hover {
-    background-color: #47648f;
+    background-color: #24416b;
   }
   
   .main-container {
@@ -43,4 +45,14 @@
   .main-container h2 {
     margin-bottom: 10px;
   }
-  
+
+  .main-container .graficos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .main-container .grafico-pizza{
+    max-width: 40%;
+  }
