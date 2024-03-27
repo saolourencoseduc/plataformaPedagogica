@@ -7,7 +7,7 @@
 
 .navegation .logo-plataforma {
   padding: 5px;
-  max-width: 8%;
+  max-width: 5%;
   background-color: #fff;
 }
 
@@ -80,17 +80,22 @@
   background-color: #2e4e7e;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
+  /* flex-direction: row; */
+  justify-content: center;
   gap: 1em;
-  padding: 30px 30px 30px 10px;
+  padding: 10px 30px 10px 10px;
 }
 
-.escola-info h1 {
-  margin: 0;
-}
 
 .escola-info h3 {
   font-size: 0.9em;
   margin-top: -10px;
+}
+
+.escola-info .logo-plataforma {  
+  margin-right: auto;
+  padding: 5px;
+  max-width: 10%;
+  background-color:#2e4e7e;
+  border-radius: 50%;  
 }

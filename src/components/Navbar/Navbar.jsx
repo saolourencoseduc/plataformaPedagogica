@@ -42,8 +42,10 @@ const Navbar = () => {
 
   return (
     <div className='Navbar'>
-      <nav className='navegation'>
-        <img src="/logo.png" alt="logo" className='logo-plataforma'/>
+      <nav className='navegation'>        
+        <img src="\logo_secretaria_saolourenco.jpeg" alt="logo" className='logo-plataforma'/>
+        <img src="\logo_prefeitura_saolourenco.jpeg" alt="logo" className='logo-plataforma'/>
+        <img src="\logo_avaliandocomvoce.jpeg" alt="logo" className='logo-plataforma'/>
 
         <div className="buttons-back">
           <span className='back-arrow' onClick={() => window.history.back()}>
@@ -66,12 +68,13 @@ const Navbar = () => {
       </nav>
 
       <div className='escola-info'>
-        <h1>{gestorEscola.escola}</h1>
-        <h3>
+      <img src="/logo_avaliaedu 2c2c.jpeg" alt="logo" className='logo-plataforma'/>
+        <div className="gestorescolar"><h1>{gestorEscola.escola}</h1></div>
+        {/* <h3>
           {gestorEscola.tipoDeEnsino.map((tipo, index) => (
             <span key={index}>{tipo}{index !== gestorEscola.tipoDeEnsino.length - 1 ? " - " : ""}</span>
           ))}
-        </h3>
+        </h3> */}
       </div>
     </div>
   );
