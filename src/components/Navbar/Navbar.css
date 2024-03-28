@@ -80,10 +80,11 @@
   background-color: #2e4e7e;
   display: flex;
   align-items: center;
-  /* flex-direction: row; */
+  flex-direction: row;
   justify-content: center;
   gap: 1em;
   padding: 10px 30px 10px 10px;
+  /* justify-content: space-between; */
 }
 
 
@@ -93,7 +94,7 @@
 }
 
 .escola-info .logo-plataforma {  
-  margin-right: auto;
+  /* margin-right: auto; */
   padding: 5px;
   max-width: 10%;
   background-color:#2e4e7e;

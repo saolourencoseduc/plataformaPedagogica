@@ -70,6 +70,7 @@ const Navbar = () => {
       <div className='escola-info'>
       <img src="/logo_avaliaedu 2c2c.jpeg" alt="logo" className='logo-plataforma'/>
         <div className="gestorescolar"><h1>{gestorEscola.escola}</h1></div>
+        {/* <div></div> */}
         {/* <h3>
           {gestorEscola.tipoDeEnsino.map((tipo, index) => (
             <span key={index}>{tipo}{index !== gestorEscola.tipoDeEnsino.length - 1 ? " - " : ""}</span>
